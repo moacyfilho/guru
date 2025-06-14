@@ -343,7 +343,7 @@
                 historyForThisTurn[historyForThisTurn.length - 1] = { role: "user", parts: [{ text: fullPrompt }]};
 
                 const payload = { contents: historyForThisTurn };
-                const apiKey = "";
+                const apiKey = "AIzaSyBnKYMZOK7Ny5S47iz2PRDl5Y9ncyu3GNg";
                 const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
                 
                 const response = await fetch(apiUrl, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) });
